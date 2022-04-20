@@ -1,0 +1,326 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: rgb(202, 210, 216);
+  font-family: 'Open Sans',
+  sans-serif;
+  width: 85%;
+  margin-top: 75px;
+  margin-bottom: 0px;
+
+}
+
+header {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#title {
+  display: inline-block;
+}
+
+#logo {
+  width: 100px;
+}
+
+#dropdown {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ppicture {
+  width: 75px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#dropdown > i {
+  margin-left: 10px;
+}
+
+/* header-end */
+
+#cards {
+  display: flex;
+  margin-top: 60px;
+}
+
+.card {
+  width: 40%;
+  background-color: white;
+  height: 200px;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.card > h3 {
+  margin: 0px;
+}
+
+#card_1 {
+  margin-right: 20px;
+
+}
+
+#card_1 > h2 {
+  color: rgb(63, 227, 227);
+}
+
+#card_2 {
+  background-color: rgb(225, 224, 224);
+  color: rgb(157, 156, 156);
+}
+
+#card_2 > h2 {
+  color: rgb(113, 111, 111);
+}
+
+/* navbar-start */
+
+#navbar {
+  width: 99.85%;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  background-color: white;
+  padding-bottom: 40px;
+  border-radius: 0px 5px 0px 0px;
+}
+
+#searchb {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.fontAwesome {
+  font-family: Helvetica, 'FontAwesome', sans-serif;
+  background-color: #ccc;
+  height: 20px;
+  border: 1px solid rgb(176, 173, 173);
+}
+
+#student_holder {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#students {
+  display: flex;
+  min-width: 150px;
+  align-items: flex-end;
+  margin-left: 45px;
+  margin-right: 10px;
+}
+
+#newb {
+  display: inline-flex;
+  background-color: rgb(63, 227, 227);
+  height: 40px;
+  border: none;
+  padding: 0px;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#newb:hover {
+  background-color: rgb(29, 194, 194);
+}
+
+#newb:active {
+  background-color: rgb(24, 164, 164);
+}
+
+#newb_icon {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+#newb_icon,
+#newb_text {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: white;
+  height: 100%;
+}
+
+#buttons_holder {
+  flex-grow: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+#buttons {
+margin-right: 40px;
+}
+
+.button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 550;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  transition-duration: 0.4s;
+  background: grey;
+  color: rgb(255, 157, 0);
+  margin: 0px;
+}
+
+#button_1 {
+border-radius: 5px 0px 0px 5px;
+}
+
+#button_2 {
+  border-radius: 0px;
+}
+
+#button_3 {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.vonal {
+  border: 1px solid black;
+}
+
+/* navbar-end */
+
+#holder {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+}
+
+#sidecheck {
+  margin: 28px 100px 0px 50px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+  background-color: orange;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 4px;
+  top: 2px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#maintable {
+  margin-right: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+tr {
+  border-bottom: 1px solid grey;
+}
+
+th {
+  text-align: left;
+  /* padding: 20px; */
+  height: 107px;
+  padding: 0px 20px 0px 20px;
+}
+
+.right {
+  text-align: right;
+}
+
+td {
+  padding: 20px;
+}
+
+td > img {
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+td > a {
+  text-decoration: none;
+  color: orange;
+}
+
+.border /* .card, #navbar, #holder*/ {
+  border-width: 1px 1px 0px 1px;
+  border-color: rgb(214, 213, 213);
+  border-style: solid;
+  
+  
+}

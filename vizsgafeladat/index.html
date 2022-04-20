@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAF</title>
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8b56425035.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <img id="logo" src="./kepek/logo.png" alt="Logo" />
+        <p>Student Administration Framework</p>
+      </div>
+      <div id="dropdown">
+        <img id="ppicture" src="./kepek/men (1).jpg" alt="Men 1" />
+        <p id="pname">Adam</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </header>
+
+    <main>
+      <div id="cards">
+        <div class="card border" id="card_1">
+          <h2>Students</h2>
+          <h3>125 students registered</h3>
+        </div>
+        <div class="card border" id="card_2">
+          <h2>Study Groups</h2>
+          <h3>6 study groups with 42 students</h3>
+        </div>
+      </div>
+      <div id="navbar" class="border">
+        <div id="searchb">
+          <p>SEARCH FOR NAME</p>
+          <form action="">
+            <input
+              type="text"
+              class="fontAwesome"
+              name="search"
+              placeholder="&#xf002;  Search"
+              value=""
+            />
+          </form>
+        </div>
+        <div id="student_holder">
+          <div id="students">
+            <span><i class="fa-solid fa-user"></i></span>
+            <span>125 students</span>
+          </div>
+        </div>
+        <button type="button" id="newb">
+          <span id="newb_icon"><i class="fa-solid fa-pen-to-square"></i></span
+          ><span id="newb_text">NEW</span>
+        </button>
+        <div id="buttons_holder">
+          <div id="buttons">
+            <button class="button" id="button_1">1</button>
+            <button class="button" id="button_2">2</button>
+            <button class="button" id="button_3">3</button>
+          </div>
+        </div>
+      </div>
+      <div id="holder" class="border">
+        <div id="sidecheck">
+          <p>Filters For Study Groups</p>
+          <label class="container"
+            >Biology <input type="checkbox" /><span class="checkmark"></span
+          ></label>
+          <label class="container"
+            >Biology <input type="checkbox" /><span class="checkmark"></span
+          ></label>
+          <label class="container"
+            >Biology <input type="checkbox" /><span class="checkmark"></span
+          ></label>
+          <label class="container"
+            >Biology <input type="checkbox" /><span class="checkmark"></span
+          ></label>
+          <label class="container"
+            >Biology <input type="checkbox" /><span class="checkmark"></span
+          ></label>
+          <label class="container"
+            >Biology <input type="checkbox" /><span class="checkmark"></span
+          ></label>
+        </div>
+        <div id="maintable">
+          <table cellspacing="35">
+            <tr>
+              <th class="check">
+                <label class="container"
+                  ><input type="checkbox" /><span class="checkmark"></span
+                ></label>
+              </th>
+              <th></th>
+              <th>NAME</th>
+              <th>SEX</th>
+              <th>PLACE AND DATE OF BIRTH</th>
+              <th class="right">GROUPS</th>
+            </tr>
+            <tr>
+              <td>
+                <label class="container"
+                  ><input type="checkbox" /><span class="checkmark"></span
+                ></label>
+              </td>
+              <td><img src="./kepek/men (1).jpg" alt="" /></td>
+              <td>John Doe</td>
+              <td>Male</td>
+              <td>Budapest, 1989.05.21</td>
+              <td class="right">
+                Biologist, Typhography and <a href="">2 more</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="container"
+                  ><input type="checkbox" /><span class="checkmark"></span
+                ></label>
+              </td>
+              <td><img src="./kepek/karen.jpg" alt="" /></td>
+              <td>Karen van der Beek</td>
+              <td>Female</td>
+              <td>Chicago, 1985.03.10</td>
+              <td class="right">Writers</td>
+            </tr>
+            <tr>
+              <td>
+                <label class="container"
+                  ><input type="checkbox" /><span class="checkmark"></span
+                ></label>
+              </td>
+              <td><img src="./kepek/women (1).jpg" alt="" /></td>
+              <td>Rebeca Trulli</td>
+              <td>Female</td>
+              <td>Budapest, 1988.04.04</td>
+              <td class="right">Biologists</td>
+            </tr>
+            <tr>
+              <td>
+                <label class="container"
+                  ><input type="checkbox" /><span class="checkmark"></span
+                ></label>
+              </td>
+              <td><img src="./kepek/Hank_Moody.jpg" alt="" /></td>
+              <td>Hank Moody</td>
+              <td>Male</td>
+              <td>Chicago, 1982.10.23</td>
+              <td class="right">Burnt-Out Writer</td>
+            </tr>
+            <tr>
+              <td>
+                <label class="container"
+                  ><input type="checkbox" /><span class="checkmark"></span
+                ></label>
+              </td>
+              <td><img src="./kepek/charlie.jpg" alt="" /></td>
+              <td>Charlie Runkle</td>
+              <td>Male</td>
+              <td>Seattle, 1983.11.12</td>
+              <td class="right">Banking Agent</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
